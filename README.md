@@ -95,20 +95,8 @@ The project follows the workflow:
 - SciPy 
 - scikit-image 
  
-## Installation 
- 
-Install the required Python libraries using: 
- 
-```bash 
-pip install numpy opencv-python matplotlib pandas torch torchvision scipy scikit-image it is given to in readme
+## Results
 
-How to Run
-Open the project notebook in Google Colab.
-Install the required libraries.
-Load the Oxford-IIIT Pet Dataset.
-Run the code cells in order.
-View the enhancement, restoration, edge detection, and segmentation results.
-Results
 
 The project produces results for:
 
@@ -122,13 +110,14 @@ Ground-truth comparison
 
 Restoration results are evaluated using MSE, PSNR, and SSIM. Segmentation results are evaluated using IoU, Dice Score, and Accuracy.
 
-Limitations
+## Limitations
 Otsu thresholding may not work well when the pet and background have similar intensity values.
 Edge detection may not detect complete object boundaries.
 Restoration performance depends on the noise level and filter size.
 Traditional image processing techniques may not recover details that are completely lost.
 The project uses a selected number of images for processing.
-Future Scope
+
+## Future Scope
 Use a larger and more diverse set of images.
 Apply adaptive filtering techniques.
 Use adaptive thresholding and watershed segmentation.
@@ -136,6 +125,7 @@ Explore frequency-domain filtering.
 Apply deep learning-based image segmentation.
 Perform evaluation on a larger number of images.
 Develop a real-time image processing application.
-Conclusion
+
+## Conclusion
 
 This project demonstrates the use of spatial and morphological image processing techniques for image enhancement, noise restoration, edge detection, and object segmentation. The results are evaluated using both quantitative metrics and visual comparison with ground-truth masks.
